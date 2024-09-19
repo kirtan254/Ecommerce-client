@@ -1,0 +1,32 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.hero-slider {
+    .slider-item {
+        // height: 460px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(234, 230, 226);
+
+        img {
+            padding: 0px;
+           width: 790px;
+           height: 500px;
+        }
+    }
+
+    .slick-dots {
+        bottom: 10px;
+
+        li button:before {
+            color: white;
+        }
+
+        li.slick-active button:before {
+            color: white;
+        }
+    }
+}
