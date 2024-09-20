@@ -14,7 +14,7 @@ const Cart = ({setshowCart}) => {
     const handlePayment=async()=>{
         try{
             const stripe=await stripePromise;
-        const res =await makePaymentRequest.post("https://ecommerce-site-poyy.onrender.com/api/orders",{
+        const res =await makePaymentRequest.post(`${process.env.REACT_APP_DEV_URL}/api/orders`,{
             products:cartItems,
         });
         await stripe.redirectToCheckout({
