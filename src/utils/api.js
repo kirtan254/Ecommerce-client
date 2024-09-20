@@ -26,7 +26,7 @@ export const makePaymentRequest=axios.create({
 
 })
 
-const API_URL = 'https://ecommerce-site-poyy.onrender.com'; // Replace with your Strapi URL
+const API_URL = process.env.REACT_APP_DEV_URL; // Replace with your Strapi URL
 
 const register = async (username, email, password) => {
   try {
